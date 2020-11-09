@@ -1,0 +1,42 @@
+body{
+    background: url(fon.jpg) no-repeat;
+    background-size: 100%;
+    margin: 0;
+    background-attachment: fixed;
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 auto;
+}
+.images div{   
+	margin: 0 40px 40px 40px; 
+    padding: 15px;
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
+img{
+    position: relative;
+    width: 70%;
+    height:70%;
+    transition: 1s;
+}
+img:hover{
+    transform: scale(1.1); 
+}
+h3{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+div figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+div figure:hover img {
+	opacity: .5;
+}
